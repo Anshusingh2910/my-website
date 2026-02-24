@@ -1,0 +1,59 @@
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.book-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.book-cover {
+  width: 260px;
+  border-radius: 10px;
+}
+
+.book-info p {
+  color: #cbd5e1;
+}
+
+.chapters-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.chapter {
+  border: 1px solid #334155;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.chapter-title {
+  padding: 15px;
+  background: #1e293b;
+  cursor: pointer;
+}
+
+.chapter-title:hover {
+  background: #334155;
+}
+
+.chapter-summary {
+  max-height: 0;
+  overflow: hidden;
+  background: #0f172a;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+
+.chapter-summary.show {
+  max-height: 300px;
+  padding: 15px;
+}

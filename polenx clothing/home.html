@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polenx Clothing | Wear Your Identity</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+                url("https://images.unsplash.com/photo-1521334884684-d80222895322") center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            padding: 14px 36px;
+            background: #1abc9c;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #16a085;
+        }
+
+        /* SHOP BY CATEGORY */
+        .categories {
+            padding: 90px 10%;
+            text-align: center;
+        }
+
+        .categories h2 {
+            font-size: 2.6rem;
+        }
+
+        .categories p {
+            color: #555;
+            margin: 12px 0 45px;
+        }
+
+        .category-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .cat {
+            height: 180px;
+            border-radius: 22px;
+            display: flex;
+            align-items: flex-end;
+            padding: 25px;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 600;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .cat::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        }
+
+        .cat span {
+            position: relative;
+        }
+
+        .cat:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        /* TRENDING PRODUCTS */
+        .products {
+            padding: 90px 10%;
+            background: #f7f7f7;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 2.6rem;
+        }
+
+        .products p {
+            color: #555;
+            margin: 12px 0 45px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 35px;
+        }
+
+        .product {
+            background: white;
+            padding: 22px;
+            border-radius: 24px;
+            position: relative;
+            transition: 0.4s;
+        }
+
+        .product:hover {
+            transform: translateY(-14px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+
+        .product h3 {
+            margin: 14px 0 6px;
+        }
+
+        .price {
+            color: #1abc9c;
+            font-weight: bold;
+        }
+
+        .product button {
+            width: 100%;
+            margin-top: 14px;
+            padding: 12px;
+            border: none;
+            background: black;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background: #1abc9c;
+            color: black;
+        }
+
+        .badge {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            background: #1abc9c;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #000;
+            color: #fff;
+            padding: 50px 20px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-box h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .footer-box h2 span {
+            color: #19db19;
+        }
+
+        .footer-box h3 {
+            margin-bottom: 12px;
+            color: #19db19;
+        }
+
+        .footer-box p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .footer-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-box ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-box ul li a {
+            text-decoration: none;
+            color: #ccc;
+            transition: 0.3s;
+        }
+
+        .footer-box ul li a:hover {
+            color: #19db19;
+            padding-left: 5px;
+        }
+
+        /* Social icons */
+        .social-icons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            font-size: 22px;
+            background: #111;
+            padding: 8px 10px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: #19db19;
+            color: #000;
+        }
+
+        /* Bottom bar */
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #222;
+            margin-top: 30px;
+            padding-top: 15px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .footer {
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div>
+            <h1>Wear Your Identity</h1>
+            <p>Premium Streetwear for Comfort & Confidence</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- SHOP BY CATEGORY -->
+    <section class="categories">
+        <h2>Shop By Category</h2>
+        <p>Find styles that match your vibe</p>
+
+        <div class="category-box">
+            <div class="cat"
+                style="background-image:url('https://images.unsplash.com/photo-1520975661595-6453be3f7070')">
+                <span>Men</span>
+            </div>
+            <div class="cat"
+                style="background-image:url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e')">
+                <span>Women</span>
+            </div>
+            <div class="cat"
+                style="background-image:url('https://images.unsplash.com/photo-1503342217505-b0a15ec3261c')">
+                <span>New Arrivals</span>
+            </div>
+            <div class="cat"
+                style="background-image:url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f')">
+                <span>Best Sellers</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRENDING NOW -->
+    <section class="products">
+        <h2>Trending Now</h2>
+        <p>Most loved styles this season</p>
+
+        <div class="product-grid">
+            <div class="product">
+                <span class="badge">HOT</span>
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+                <h3>Oversized T-Shirt</h3>
+                <p class="price">₹799</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <span class="badge">NEW</span>
+                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
+                <h3>Street Hoodie</h3>
+                <p class="price">₹1499</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <span class="badge">TREND</span>
+                <img
+                    src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSnyXc4zxkYGB7ylO5oRcUe0y26RYfTAqX8y3AIWs-OR0nUopbqQu0Dbd5PjpzEdPfDVzNrmOXWpQUdex94ikLbTlR24VYUhTa1Kv03CTbaeTyAGggFwS99">
+                <h3>Casual Shirt</h3>
+                <p class="price">₹999</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <span class="badge">BEST</span>
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+                <h3>Cargo Pants</h3>
+                <p class="price">₹1299</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <span class="badge">BEST</span>
+                <img
+                    src="data:image/jpeg;base64,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">
+                <h3>Mens Hoodies</h3>
+                <p class="price">₹899</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <span class="badge">BEST</span>
+                <img
+                    src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTFOQGAF4K1PhymoImcCg4xxxHC4aoySg0FakkTBpdRcv5W9OZe9x0r8Vw5k7mRhoYs2EN0BBj81YcusY_aG95GoZndYqq_-ZQfNwtI1oXVp5SCJGEgnrQfSg">
+                <h3>Mens Pants</h3>
+                <p class="price">₹1199</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-box">
+                <h2>Polenx <span>Clothes</span></h2>
+                <p>Wear Your Identity.
+                    Premium fashion for Men, Women & Kids.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="trending.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="footer-box">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="mens.html">Men</a></li>
+                    <li><a href="woman.html">Women</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="clothe.html">Trending</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#">🌐</a>
+                    <a href="#">📸</a>
+                    <a href="#">🐦</a>
+                    <a href="#">▶️</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Polenx Clothes | Designed by Anshu Singh</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

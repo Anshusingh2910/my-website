@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Polenx</title>
+    <link rel="stylesheet" href="about.css">
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: #0f0f0f;
+        color: #ffffff;
+        line-height: 1.6;
+    }
+
+    .about-header {
+        background-image:
+            linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+            url("https://media.istockphoto.com/id/1163589059/photo/about-us.jpg?s=612x612&w=0&k=20&c=xiAumkYaKpQc3xepslDpn-lFhYPae6ivX_rRkgSXJgs=");
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-header h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .about-header p {
+        font-size: 18px;
+        color: #19db19;
+    }
+
+    .about-section {
+        padding: 60px 10%;
+    }
+
+    .about-section h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .about-section p {
+        max-width: 800px;
+        font-size: 20px;
+        color: #dddddd;
+    }
+
+    .about-section ul {
+        margin-top: 15px;
+    }
+
+    .about-section ul li {
+        list-style: none;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .light {
+        background-color: #1a1a1a;
+    }
+
+    .footer {
+        padding: 70px 10%;
+        text-align: center;
+        background-color: #111;
+    }
+
+    .footer h2 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .footer p {
+        margin-bottom: 20px;
+        color: #ccc;
+    }
+
+    .footer button {
+        padding: 12px 30px;
+        font-size: 16px;
+        border: none;
+        background-color: #19db19;
+        color: #000;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+
+    .footer button:hover {
+        color: #000;
+        background-color: white;
+    }
+</style>
+
+<body>
+
+    <section class="about-header">
+        <h1>About Polenx</h1>
+        <p>Wear Your Identity</p>
+    </section>
+
+    <section class="about-section">
+        <h2>Our Story</h2>
+        <p>
+            Polenx is a modern clothing brand built for individuals who express confidence
+            through style. We believe fashion is not just about wearing clothes,
+            it’s about wearing your identity.
+        </p>
+    </section>
+
+    <section class="about-section light">
+        <h2>Our Mission</h2>
+        <p>
+            Our mission is to deliver premium quality, trendy, and affordable fashion
+            that empowers people to express themselves confidently.
+        </p>
+    </section>
+
+    <section class="about-section">
+        <h2>Why Choose Polenx?</h2>
+        <ul>
+            <li>✔ Premium Quality Fabric</li>
+            <li>✔ Trend-Driven Designs</li>
+            <li>✔ Affordable Pricing</li>
+            <li>✔ Made for Everyday Comfort</li>
+        </ul>
+    </section>
+
+    <section class="about-section light">
+        <h2>Our Vision</h2>
+        <p>
+            To become a globally recognized fashion brand that represents individuality,
+            confidence, and modern streetwear culture.
+        </p>
+    </section>
+
+    <section class="footer">
+        <h2>Be a Part of Polenx</h2>
+        <p>Join the Polenx community and wear your identity with pride.</p>
+        <button onclick="goToPage('trending.html')">Shop Now</button>
+    </section>
+
+</body>
+
+</html> 

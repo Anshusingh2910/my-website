@@ -1,0 +1,215 @@
+:root {
+    --bg-gradient: linear-gradient(to right, #1a1a2e, #16213e);
+    --card-color: #2a2f4f;
+    --text-color: #ffffff;
+    --button-color: #e94584;
+    --button-hover: #c7366f;
+}
+
+/* ===== Global ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg-gradient);
+    color: var(--text-color);
+}
+
+/* ===== Navbar ===== */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+/* Logo left */
+.logo {
+    height: 60px;
+}
+
+/* Links + icon right group */
+.nav-right {
+    margin-left: auto;   /* 🔥 ye sabko right me bhej dega */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Links */
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-right ul li a {
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    font-weight: 500;
+}
+
+.nav-right ul li a:hover {
+    color: #e94584;
+}
+
+/* Sidebar icon */
+.side-bar {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.side-bar:hover {
+    transform: scale(1.1);
+}
+
+/* ===== Section ===== */
+h1 {
+    text-align: center;
+    margin: 20px 0 40px;
+    font-size: 40px;
+}
+
+/* ===== Layout ===== */
+#section-container {
+    padding: 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* ===== Book Card ===== */
+.character-card {
+    background-color: var(--card-color);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: 0.3s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== Image ===== */
+.character-cover {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* ===== Text ===== */
+.character-card p {
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+/* ===== Button ===== */
+.redirection-btn {
+    margin-top: auto;
+    background: var(--button-color);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.redirection-btn:hover {
+    background: var(--button-hover);
+}
+
+#load-more {
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #a855f7; /* purple color */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 40px auto;
+  display: none; /* default hidden */
+}
+
+@keyframes spin         {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 50px 20px 20px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #94a3b8;
+  transition: 0.3s;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #334155;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}

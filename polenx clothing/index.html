@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshu singh</title>
+    <link rel="stylesheet" href="polenx.css">
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>                           
+<body>
+    <section class="bgground">
+        <nav id="navbar">
+            <div class="brand">
+                <h2>Polenx <span class="clothes">Clothes</span></h2>
+            </div>
+            <div class="brand-content">
+                <h3><a href="home.html">Home</a></h3>
+                <h3><a href="trending.html">Shop</a></h3>
+                <h3><a href="about.html">About</a></h3>
+                <h3><a href="contact.html">Contact</a></h3>
+                <a href="cart.html">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3523/3523887.png" alt="Add to cart" width="35"
+                        height="35">
+                </a>
+            </div>
+            <div class="sider"> <img src="https://cdn-icons-png.flaticon.com/128/9045/9045146.png" alt="Slider"
+                    height="35px" width="35px"></div>
+        </nav>
+        <div class="heading">
+            <h1>Wear Your <span class="Identify">Identify</span></h1>
+            <button onclick="goToPage('trending.html')" class="shop">Shop Now</button>
+        </div>
+    </section>
+    <section class="second-category">
+        <div class="category">
+            <h2>Shop by category</h2>
+        </div>
+        <div class="category-choice">
+            <div class="mens">
+                <h2>Men</h2>
+                <button onclick="goToPage('mens.html')" class="category-button">Shop Now</button>
+            </div>
+            <div class="womens">
+                <h2>Women</h2>
+                <button onclick="goToPage('woman.html')" class="category-button">Shop Now</button>
+            </div>
+            <div class="kids">
+                <h2>Kids</h2>
+                <button onclick="goToPage('kids.html')" class="category-button">Shop Now</button>
+            </div>
+            <div class="Treading-Clothes">
+                <h2>Treading Clothes</h2>
+                <button onclick="goToPage('clothe.html')" class="category-button">Shop Now</button>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="Trending-product">
+            <h2>Trending <span class="Seller">Now</span>-Our <span class="Seller">Best</span> Seller</h2>
+        </div>
+        <div class="product-listing">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0347/3225/files/Mens_SummerStyle_4_600x600.jpg?v=1724680054"
+                    alt="Blazer">
+                <h3>Blazer</h3>
+                <p>Price:<span class="price">1699</span> </p>
+                <button class="Add-to-card" onclick="addToCart(
+'Blazer',
+1699,
+'https://cdn.shopify.com/s/files/1/0347/3225/files/Mens_SummerStyle_4_600x600.jpg?v=1724680054'
+)">
+                    Add to Cart
+                </button>
+
+                <button class="Add-to-card">Shop Now</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSFXCfDQSQDmt2Hx8D0vHdc6yPasWOavr6Cw2wflPfbWNqZ8FKBdLZigW8_SHvY4HD-an5ANPKR_o6DqptbdY8OySabCDVkQN_6nCa9E8CVMHVhdHdtXoER"
+                    alt="cap">
+                <h3>Cap</h3>
+                <p>Price:<span class="price">849</span> </p>
+                <button class="Add-to-card" onclick="addToCart(
+'Cap',
+849,
+'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSFXCfDQSQDmt2Hx8D0vHdc6yPasWOavr6Cw2wflPfbWNqZ8FKBdLZigW8_SHvY4HD-an5ANPKR_o6DqptbdY8OySabCDVkQN_6nCa9E8CVMHVhdHdtXoER'
+            )"> Add to Cart
+                </button>
+
+                <button class="Add-to-card">Shop Now</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR9wXYyTZuakUrQ6_VJExG8E5g5TRqZCFK7AAp3uSz-DFzgW9AALXQGbhvwKWslZLR3OrDkvZR2skzIfr9Uxg21c76CgGgm5EdvJo6BrSY"
+                    alt="Tshirt">
+                <h3>Over Size Tshirt</h3>
+                <p>Price:<span class="price">1399</span> </p>
+                <button class="Add-to-card" onclick="addToCart(
+'Over Size Tshirt',
+1399,
+'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR9wXYyTZuakUrQ6_VJExG8E5g5TRqZCFK7AAp3uSz-DFzgW9AALXQGbhvwKWslZLR3OrDkvZR2skzIfr9Uxg21c76CgGgm5EdvJo6BrSY'
+)">
+                    Add to Cart
+                </button>
+
+                <button class="Add-to-card">Shop Now</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS_LKavWRtRlrJcEvIsPbOrh5-Nr5DeioP1TMhDlDVjvs5VdQg8Q12n665ucM5ZGJx1SC_Q2EOQLbnzhYBlw7C_74e1D1tN98mmkZcqrjqXuhnQEBtF0lZ5"
+                    alt="jeans">
+                <h3>Straight Fit Jeans</h3>
+                <p>Price:<span class="price">999</span> </p>
+                <button class="Add-to-card" onclick="addToCart(
+'Straight Fit Jeans',
+999,
+'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS_LKavWRtRlrJcEvIsPbOrh5-Nr5DeioP1TMhDlDVjvs5VdQg8Q12n665ucM5ZGJx1SC_Q2EOQLbnzhYBlw7C_74e1D1tN98mmkZcqrjqXuhnQEBtF0lZ5'
+)">
+                    Add to Cart
+                </button>
+
+                <button class="Add-to-card">Shop Now</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSaBj7oa5UMgfgISk7SZWOhyzVamJ6uSE8g_-CIbQBm06-xxEwCCdX8-mPdZOzBuPWWc_hUzD-fyG7-rf2hSheQ1N5tM-8Us5u4Z9olDYPX1nxztG5w6YM6GYTRHp3YYq5ApN_vc84o0yo&usqp=CAc"
+                    alt ="Hoodies">
+                <h3>Hoodies</h3>
+                <p>Price:<span class="price">1499</span> </p>
+                <button class="Add-to-card" onclick="addToCart(
+'Hoodies',
+1499,
+'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSaBj7oa5UMgfgISk7SZWOhyzVamJ6uSE8g_-CIbQBm06-xxEwCCdX8-mPdZOzBuPWWc_hUzD-fyG7-rf2hSheQ1N5tM-8Us5u4Z9olDYPX1nxztG5w6YM6GYTRHp3YYq5ApN_vc84o0yo&usqp=CAc'
+)">
+                    Add to Cart
+                </button>
+                <button class="Add-to-card">Shop Now</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ_bFtshYdWR0KyKn2sL5Cz6H-iFKmC2Aa4T33tT7wsUWN_7Z_yByofptFSzkKBckYPhKWcGZf2KkpNiZRPubsobvwgOGrGMvjXrDR2ULRYtPGVvcoMfFgLTQ"
+                    alt="Hoodies">
+                <h3>Hoodies</h3>
+                <p>Price: <span class="price">1399</span></p>
+                <button class="Add-to-card" onclick="addToCart(
+'Hoodies',
+1399,
+'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ_bFtshYdWR0KyKn2sL5Cz6H-iFKmC2Aa4T33tT7wsUWN_7Z_yByofptFSzkKBckYPhKWcGZf2KkpNiZRPubsobvwgOGrGMvjXrDR2ULRYtPGVvcoMfFgLTQ'
+)">
+                    Add to Cart
+                </button>
+                <button class="Add-to-card">Shop Now</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSo3xXcTkvsbXuWg-Ng2nWCxiyVAGSlkvEa-i1qvlWYS7ZtqGQXXRF_8sjoE9y-9YPtSAxO8BgF4xYN1bjBxrWTA0MTSUZ7DQzO72IEfjkXsKNjDBmN694P"
+                    alt="Sweatshirt">
+                <h3>Sweatshirt</h3>
+                <p>Price: <span class="price">999</span></p>
+                <button class="Add-to-card" onclick="addToCart(
+'Sweatshirt',
+999,
+'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSo3xXcTkvsbXuWg-Ng2nWCxiyVAGSlkvEa-i1qvlWYS7ZtqGQXXRF_8sjoE9y-9YPtSAxO8BgF4xYN1bjBxrWTA0MTSUZ7DQzO72IEfjkXsKNjDBmN694P'
+)">
+                    Add to Cart
+                </button>
+                <button class="Add-to-card">Shop Now</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTaAOYIhMIZI-xXDzHFqhMystOUMmYEwhJn2iHgqUwl1yKRd-4OMfX5oMZWIafmCR7iGPcJY_2tjIXeSQp5bRa4-4DV4HVcL0Q1ko_uLyrMzA3IawAP3Dp"
+                    alt="Girls top">
+                <h3>Printed Tie-Up Cold shoulder</h3>
+                <p>Price:<span class="price">1699</span> </p>
+                <button class="Add-to-card" onclick="addToCart(
+'printed Tie-Up Cold shoulder',
+1699,
+'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSo3xXcTkvsbXuWg-Ng2nWCxiyVAGSlkvEa-i1qvlWYS7ZtqGQXXRF_8sjoE9y-9YPtSAxO8BgF4xYN1bjBxrWTA0MTSUZ7DQzO72IEfjkXsKNjDBmN694P'
+)">
+                    Add to Cart
+                </button>
+                <button class="Add-to-card">Shop Now</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS1FfCwQuN8cH8g_Y3lBZIAVWtLMoU8RqNcmbJZZNSqvCwSQ2GoBg81lz5jblo-8wsYB57GY_nIJ9gU5F220aMDvKqwfVEL4WLQCOjKfirp7yc0i1tAL6B6"
+                    alt="Girls top">
+                <h3>Girls Lace Top</h3>
+                <p>Price:<span class="price">499</span> </p>
+                <button class="Add-to-card" onclick="addToCart(
+'Girl Lace Top',
+499,
+'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS1FfCwQuN8cH8g_Y3lBZIAVWtLMoU8RqNcmbJZZNSqvCwSQ2GoBg81lz5jblo-8wsYB57GY_nIJ9gU5F220aMDvKqwfVEL4WLQCOjKfirp7yc0i1tAL6B6'
+)">
+                    Add to Cart
+                </button>
+                <button class="Add-to-card">Shop Now</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSTUT1JTrb-sIoogGwG5Uz8mahYIibcvnqKul1hKwwO2mquRl3OLrRBcIQbCVdNaz4dWuKziUrbKcxJ0oLc9l8KIrbCC0vHsMDIQwet6o0JevrOCkfyFM4BSg"
+                    alt="Mens jacket">
+                <h3>Regualar Fit Snitch Jacket</h3>
+                <p>Price:<span class="price">1299</span> </p>
+                <button class="Add-to-card" onclick="addToCart(
+'Regualar Fit Snitch jacket',
+1299,
+'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSTUT1JTrb-sIoogGwG5Uz8mahYIibcvnqKul1hKwwO2mquRl3OLrRBcIQbCVdNaz4dWuKziUrbKcxJ0oLc9l8KIrbCC0vHsMDIQwet6o0JevrOCkfyFM4BSg'
+)">
+                    Add to Cart
+                </button>
+                <button class="Add-to-card">Shop Now</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSquLJ-UEZCgMAfm5VIx3g2ovBzLWplw-xCilCALngb805JAOmQ7jrJketCall-7frbhzcaywuvBRXsPyAAjunS6SgNfEn-Wy7AZ6HClJUej7q7N3fsjcGLsg"
+                    alt="Mens Cargo">
+                <h3>Mens Cargo</h3>
+                <p>Price:<span class="price">899</span> </p>
+                <button class="Add-to-card" onclick="addToCart(
+'Mens Cargo',
+899,
+'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSquLJ-UEZCgMAfm5VIx3g2ovBzLWplw-xCilCALngb805JAOmQ7jrJketCall-7frbhzcaywuvBRXsPyAAjunS6SgNfEn-Wy7AZ6HClJUej7q7N3fsjcGLsg'
+)">
+                    Add to Cart
+                </button>
+                <button class="Add-to-card">Shop Now</button>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQrwEe_PEMm4uRGnnK1uzXT8Z1EAU31CvfWIT_eW1b_kZEP_YKzzbNQxQ9524jfAvQ8sOJldse1dJnW0vv7td4mAutd3qZkdBQYjOf8jKkm7eODkYCNon0V"
+                    alt="Mens Shirt">
+                <h3>Shirt</h3>
+                <p>Price:<span class="price">1199</span> </p>
+                <button class="Add-to-card" onclick="addToCart(
+'Mens Shirt',
+1199,
+'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQrwEe_PEMm4uRGnnK1uzXT8Z1EAU31CvfWIT_eW1b_kZEP_YKzzbNQxQ9524jfAvQ8sOJldse1dJnW0vv7td4mAutd3qZkdBQYjOf8jKkm7eODkYCNon0V'
+)">
+                    Add to Cart
+                </button>
+                <button class="Add-to-card">Shop Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="section4">
+
+        <div class="winter-wallpaper">
+            <img src="https://www.urbanmonkey.com/cdn/shop/files/5_77c32da9-2633-4e4b-88a5-44794e980648.png?v=1761651164&width=2000" alt="winter">
+        </div>
+    </section> -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-box">
+                <h2>Polenx <span>Clothes</span></h2>
+                <p>Wear Your Identity.
+                    Premium fashion for Men, Women & Kids.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="trending.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="footer-box">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="mens.html">Men</a></li>
+                    <li><a href="woman.html">Women</a></li>
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="clothe.html">Trending</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#">🌐</a>
+                    <a href="#">📸</a>
+                    <a href="#">🐦</a>
+                    <a href="#">▶️</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Polenx Clothes | Designed by Anshu Singh</p>
+        </div>
+    </footer>
+    <script src="polenx.js"></script>
+</body>
+
+</html>
